@@ -1,3 +1,24 @@
+@font-face {
+    font-family:nice;
+    src: url(NiceDream.otf);
+}
+
+header{
+    background-color: rgb(226, 171, 248);
+}
+
+h1 {
+    color:rgb(255, 0, 179);
+    font-family: nice;
+    font-size: 130px;    
+    text-align: center;
+    text-shadow: 0px 0px 8px rgb(132, 247, 222),
+                 0px 0px 8px rgb(132, 247, 222),
+                 0px 0px 15px rgb(206, 245, 236);
+                
+    padding: 20px;
+}
+
 #photo1{
     margin: auto;
     
@@ -5,6 +26,7 @@
     height: 200px;
     border-radius: 20px;
 }
+<<<<<<< HEAD
 #photo2{
     margin: auto;
 width: 200px;
@@ -17,3 +39,17 @@ border-radius: 20px;
     height: 200px;
     border-radius: 20 px;
  }
+=======
+
+#datos{
+    width: 300px;
+    font-family: gill sans;
+    font-size: 20px;
+
+}
+input{
+    margin: center;
+    width: 240px;
+
+}
+>>>>>>> e348a701695e283473d17eabc2e90647d94c7fa4
