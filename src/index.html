@@ -17,47 +17,49 @@
       </nav>
     </header>
     <main>
+
       <figure>
         <img  id= "photo1" src="https://www.elmueble.com/medio/2019/12/05/cheesecacke-choco-496664_0f7b18f8_1336x2000.jpg" alt="Postre">
-<<<<<<< HEAD
-        <img  id= "photo2" src="https://c8.alamy.com/compes/mbap38/variedad-de-productos-pan-bollos-de-pan-galletas-galletas-aislado-sobre-fondo-blanco-trazado-de-recorte-vista-desde-arriba-mbap38.jpg" alt="galleta">
-        <img  id= "photo3" src="https://www.okchicas.com/wp-content/uploads/2016/01/Pasteles-de-boda-m%C3%A1s-cool-1.jpg" alt="pastel">
-=======
         <img  id= "photo1" src="https://www.elmueble.com/medio/2019/12/05/cheesecacke-choco-496664_0f7b18f8_1336x2000.jpg" alt="Galleta">
         <img  id= "photo1" src="https://www.elmueble.com/medio/2019/12/05/cheesecacke-choco-496664_0f7b18f8_1336x2000.jpg" alt="Pastel">
->>>>>>> e348a701695e283473d17eabc2e90647d94c7fa4
       </figure>
-      <Section>
-        <form  id="datos" autocomplete="off">
-          <fieldset>
-            <legend>Datos de Envío</legend>
-            
-            <label for="name">Nombre o Razón social </label><br>
-            <input type="text" id="name" name="name" required> <br>
+      <!--formulario-->
+      <form action=""id="formulario-tarjeta" class="formulario-tarjeta">
+        <div class="grupo">
+          <label for="inputNumero">Número Tarjeta</label>
+          <input type="text"id="inputNumero" maxlength="19"autocomplete="off">
+        </div>
+        <div class="grupo">
+          <label for="inputNombre">Nombre</label>
+          <input type="text"id="inputNombre" maxlength="19"autocomplete="off">
+        </div>
+        <div class="flexbox">
+             <div class="=grupo expira">
+                <label for="selectMes">Expira</label>
+                 <div class="flexbox">
+                   <div class="grupo-select">
+                     <select name="mes" id="selectmes">
+                       <option disabled selected>Mes</option>
+                     </select>
+                     <i class="fas fa-angle-down"></i>
+                   </div>
+                   <div class="grupo-select">
+                     <select name="year" id="selectYear">
+                      <option disabled selected>Año</option>
+                     </select>
+                     <i class="fas fa-angle-down"></i>
+                    </div>
 
-            <label for="CC">Cédula o Nit </label><br>
-            <input type="text" id="CC" name="CC" required> <br>
-
-            <label for="location">Dirección</label><br>
-            <input type="text" id="location" name="location" required> <br>
-
-            <label for="tel">Teléfono/Cel.</label><br>
-            <input type="tel" id="tel" name="tel" required><br>
-
-            <label for="email">Correo Electrónico</label><br>
-            <input type="email" id="email" name="email" required> <br>
-            
-            <input type="submit" value="enviar">
+                   
+                  </div>
+           </div>
+        </div>
+      </form>
+     
 
 
 
-
-          </fieldset>
-
-
-
-        </form>
-      </Section>
+    
     </main>
     <footer></footer>
     <script src="index.js" type="module"></script>

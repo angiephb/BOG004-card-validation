@@ -22,34 +22,14 @@ h1 {
 #photo1{
     margin: auto;
     
-    width:200px;
-    height: 200px;
+    width: 100px;px;
+    height: 100px;
     border-radius: 20px;
 }
-<<<<<<< HEAD
-#photo2{
-    margin: auto;
-width: 200px;
-height: 200px;
-border-radius: 20px;
-}
-#photo3{
-    margin: auto;
-    width: 200px;
-    height: 200px;
-    border-radius: 20 px;
- }
-=======
 
-#datos{
-    width: 300px;
-    font-family: gill sans;
-    font-size: 20px;
 
-}
-input{
-    margin: center;
-    width: 240px;
 
-}
->>>>>>> e348a701695e283473d17eabc2e90647d94c7fa4
+
+
+
+
