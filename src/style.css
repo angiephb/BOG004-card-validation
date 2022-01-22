@@ -27,7 +27,12 @@ h1 {
     border-radius: 20px;
 }
 
-
+/*------formulario trjeta------*/
+.formulario-tarjeta{
+ background: rgb(123, 238, 207);   
+ width: 100%;
+ padding: 150px 30px 30px 30px;
+}
 
 
 
