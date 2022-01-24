@@ -3,6 +3,20 @@ import validator from './validator.js';
 console.log(validator);
 
 const formulario = document.querySelector ("#formulario-tarjeta");
+const inputNumero = document.querySelector ("#numero");
+const enviar = document.getElementById ("btnEnviar");
+let arrayNumbers = [];
+
+/* Convertir input en array e invertir */
+enviar.addEventListener("click", function(){
+    console.log("antes",arrayNumbers);
+    console.log("valor",inputNumero.value);
+    arrayNumbers = (inputNumero.value.split(''));
+    
+    arrayNumbers.reverse();
+    console.log(arrayNumbers);
+})
+
 
 
 /* numero de tarjeta*/
@@ -22,9 +36,11 @@ formulario.numero.addEventListener("keyup", (e) => {
     //ultimo espacio
     .trim();
 
-
-
 });
+
+
+
+
 
 
 
@@ -70,6 +86,14 @@ const enviar = document.getElementById("btnEnviar");
 enviar.addEventListener("click", function(){
     console.log(formulario.value);
 })
+
+/* numero de tarjeta
+formulario.numero.addEventListener("keyup", (e) => {
+    var valorNumero = e.target.value;
+    console.log(valorNumero);
+});
+
+   
 */
 
 
