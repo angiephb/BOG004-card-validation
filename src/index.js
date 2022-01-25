@@ -21,10 +21,11 @@ formulario.numero.addEventListener("keyup", (e) => {
 
     //ultimo espacio
     .trim();
-
-
-
 });
+
+
+
+
 
 
 
