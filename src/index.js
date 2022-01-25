@@ -7,47 +7,24 @@ const inputNumero = document.querySelector ("#numero");
 const enviar = document.getElementById ("btnEnviar");
 let arrayNumbers = [];
 
-/* Convertir input en array e invertir */
+/* Aqui le dimos una funcion al boton para que nos trajera la información del INPUT */
+
 enviar.addEventListener("click", function(){
-
-/* empezamos a trabajar en el algoritmo */ 
-
     /*console.log("antes",arrayNumbers);
     console.log("valor",inputNumero.value);*/
-    arrayNumbers = (inputNumero.value.split(''));    
-    arrayNumbers.reverse();
-    console.log(arrayNumbers);
 
-    /*numeros pares: filtramos cada el elemento del array con .filter por numero y posicion
-    para obtener solo los numeros en posiciones pares*/
+/*Aqui guardamos el valor del INPUT, lo separamos por "," paraque quedara un array con varios elementos */ 
+    arrayNumbers = (inputNumero.value.split(''));  
 
-let impares = arrayNumbers.filter (function (num,position){
-        return (num,position % 2 != 0);             
-    })
-
-console.log("impares", impares);
-
-let pares = arrayNumbers.filter (function (num,position){
-    return (num,position % 2 == 0);             
-})
-
-console.log("pares", pares);
-
-
-/* multiplicacion de posiciones pares*/
-
-let dobles = pares.map(function (num){
-    return num*2;}        
-)
-console.log("multi", dobles);
-
-
+/* Aquí llamamos la variable y el metodo para que ejecutara las funciones de "validator.js"
+y guardara los datos en nuestro array "arrayNumbers" */ 
+    validator.isValid(arrayNumbers)  
+   
 });
 
+/* Aqui le dimos un evento de escucha:KEYUP al input del numero de la tarjeta
+para que evitara algunos caractes*/
 
-
-
-/* numero de tarjeta*/
 formulario.numero.addEventListener("keyup", (e) => {
     let valorNumero = e.target.value;
 
@@ -56,15 +33,15 @@ formulario.numero.addEventListener("keyup", (e) => {
     .replace(/\s/g, "")
 
     //elimina letras
-    .replace(/\D/g, "")     
-    
+    .replace(/\D/g, "")    
 
     //ultimo espacio
     .trim();
 
 });
 
-/* meses */
+/* Aquí modificamos las opciones de seleccion en meses y las personalizamos con un ciclo FOR */
+
 for (let i = 1; i <= 12; i++) {
     let opcion = document.createElement ("option");
     opcion.value = i;
@@ -72,7 +49,8 @@ for (let i = 1; i <= 12; i++) {
     formulario.mes.appendChild(opcion);
 }
 
-/* años */
+/* Aquí modificamos las opciones de seleccion en año y las personalizamos con un ciclo FOR */
+
 const yearActual = new Date().getFullYear();
 
 for (let i = yearActual; i <= yearActual + 10; i++) {
@@ -81,51 +59,3 @@ for (let i = yearActual; i <= yearActual + 10; i++) {
     opcion.innerText = i;
     formulario.Year.appendChild(opcion);
 }
-
-
-
-
-
-
-
-/*
-const formulario = document.getElementById("datacard");
-const input = document.querySelectorAll("#datacard input");
-
-const expresiones = {
-        titular: /^[a-zA-Z]$/,
-        numeroTarjeta: /^\d{0,16}$/,
-        cvv: /^\d{0,3}$/,
-        cuotas: /^[1|6|12|24|36|48]$/,
-        celular: /^\d{0,10}$/
-}
-
-const formulario = document.getElementById("numero");
-const enviar = document.getElementById("btnEnviar");
-
-enviar.addEventListener("click", function(){
-    console.log(formulario.value);
-})
-
-/* numero de tarjeta
-formulario.numero.addEventListener("keyup", (e) => {
-    var valorNumero = e.target.value;
-    console.log(valorNumero);
-});
-
-
-
-/*multiplicacion numeros pares: usamos el parametro .map para multiplicar cada numero de la posicion par
-por 2 y obtener el nuevo arreglo 
-
-let suma =
-    
-if (dobles >= 9) {
-    return dobles -= 9;
-
-}
-console.log("suma", dobles);
-
-})
-   
-*/
