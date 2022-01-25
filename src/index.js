@@ -9,13 +9,32 @@ let arrayNumbers = [];
 
 /* Convertir input en array e invertir */
 enviar.addEventListener("click", function(){
-    console.log("antes",arrayNumbers);
-    console.log("valor",inputNumero.value);
-    arrayNumbers = (inputNumero.value.split(''));
-    
+
+/* empezamos a trabajar en el algoritmo */ 
+
+    /*console.log("antes",arrayNumbers);
+    console.log("valor",inputNumero.value);*/
+    arrayNumbers = (inputNumero.value.split(''));    
     arrayNumbers.reverse();
     console.log(arrayNumbers);
+
+    /*numeros pares: filtramos cada el elemento del array con .filter por numero y posicion
+    para obtener solo los numeros en posiciones pares*/
+let pares = arrayNumbers.filter (function (num,position){
+    return num,position % 2 == 0;
 })
+
+console.log("pares", pares);
+/* multiplicacion de posiciones pares*/
+
+let dobles = pares.map(function (num){
+    return num*2;} if(dobles > 9) {dobles -= 9;
+        console.log("multi", dobles);
+})
+console.log("suma", suma);
+
+
+});
 
 
 
@@ -30,19 +49,11 @@ formulario.numero.addEventListener("keyup", (e) => {
     //elimina letras
     .replace(/\D/g, "")     
     
-    //espacios cada 4 numeros
-    .replace(/([0-9]{4})/g, "$1 ")    
 
     //ultimo espacio
     .trim();
 
 });
-
-
-
-
-
-
 
 /* meses */
 for (let i = 1; i <= 12; i++) {
@@ -93,10 +104,19 @@ formulario.numero.addEventListener("keyup", (e) => {
     console.log(valorNumero);
 });
 
+
+
+/*multiplicacion numeros pares: usamos el parametro .map para multiplicar cada numero de la posicion par
+por 2 y obtener el nuevo arreglo 
+
+let suma =
+    
+if (dobles >= 9) {
+    return dobles -= 9;
+
+}
+console.log("suma", dobles);
+
+})
    
 */
-
-
-
-
-
