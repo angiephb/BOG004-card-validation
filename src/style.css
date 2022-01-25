@@ -21,37 +21,79 @@
     font-size: 16px;
 }
 
-#photo1{
-    margin: auto;
-    
-    width: 100px;px;
-    height: 100px;
-    border-radius: 20px;
-}
-
-/*------formulario trjeta------*/
-.formulario-tarjeta{
- background: rgb(123, 238, 207);   
- width: 100%;
- padding: 150px 30px 30px 30px;
-}
-
-.formulario-tarjeta label{
-    display: block;
-    color:#7d8994 ;
-    margin-bottom: 5px;
-    font-size: 16px;
-}
 .formulario-tarjeta input,
 .formulario-tarjeta select,
-.btn-enviar{
-    border:2px solid #6a8fb3;
-    font size: 18px;
-    height:50px;
-    width:100%
-    padding: 5px 12px;
+.btnEnviar {
+    border:2px solid rgb(85, 250, 187);
     border-radius: 5px;
-    
+    font-size: 18px;
+    padding: 5px 12px;
+    width: 100%;
+}
+
+.formulario-tarjeta input:hover,
+.formulario-tarjeta select:hover {
+    border:2px solid rgb(2, 212, 132);
+}
+
+.formulario-tarjeta input:focus,
+.formulario-tarjeta select:focus {
+    outline: rgb(148, 255, 214);
+    box-shadow: 1px 7px 10px -5px rgb(187, 2, 212);
+}
+
+.formulario-tarjeta input{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.formulario-tarjeta .flexbox{
+    display: flex;    
+    justify-content: space-between;
+}
+
+.formulario-tarjeta .fecha{
+    width: 100%;
+}
+
+.formulario-tarjeta .cvv{
+    min-width: 100px;
+}
+.formulario-tarjeta .seleccion{
+    width: 100%;
+    margin-right: 15px;
+    position: relative;    
+}
+
+.formulario-tarjeta select{
+    -webkit-appearance: none;
+
+}
+
+.formulario-tarjeta .seleccion i{
+    position: absolute;
+    color: rgb(148, 255, 214);
+    top: 10px;
+    right: 15px;
+    transition: 3s ease all;
+}
+.formulario-tarjeta .seleccion:hover i{
+    color: rgb(2, 212, 132);
+}
+
+.formulario-tarjeta .btnEnviar{
+    border:none;
+    padding: 10px;
+    font-size: 20px;
+    color:rgb(255, 255, 255);
+    background-color: rgb(2, 161, 100);
+    box-shadow: 2px 2px 10px 0px rgb(2, 212, 132);
+    cursor: pointer;
+}
+
+.formulario-tarjeta .btnEnviar:hover{
+    background: rgb(85, 250, 187);
+    color:rgb(2, 161, 100);
 
 }
 
