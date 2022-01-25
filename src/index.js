@@ -20,21 +20,30 @@ enviar.addEventListener("click", function(){
 
     /*numeros pares: filtramos cada el elemento del array con .filter por numero y posicion
     para obtener solo los numeros en posiciones pares*/
+
+let impares = arrayNumbers.filter (function (num,position){
+        return (num,position % 2 != 0);             
+    })
+
+console.log("impares", impares);
+
 let pares = arrayNumbers.filter (function (num,position){
-    return num,position % 2 == 0;
+    return (num,position % 2 == 0);             
 })
 
 console.log("pares", pares);
+
+
 /* multiplicacion de posiciones pares*/
 
 let dobles = pares.map(function (num){
-    return num*2;} if(dobles > 9) {dobles -= 9;
-        console.log("multi", dobles);
-})
-console.log("suma", suma);
+    return num*2;}        
+)
+console.log("multi", dobles);
 
 
 });
+
 
 
 
