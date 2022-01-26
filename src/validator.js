@@ -36,7 +36,6 @@ let dobles = pares.map(function (num){
 )
 console.log("multi", dobles);
 
-
   }
 
     
