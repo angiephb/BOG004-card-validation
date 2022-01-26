@@ -41,35 +41,13 @@ en las pocisiones pares*/
 
     let digitos = dobles.concat(impares);   
     console.log("digitos", digitos);
-    
-    let resultados =  digitos.reduce(function(valorAnterior, valorActual){
-       return valorAnterior + valorActual;
-    })
 
-    console.log("resultados", resultados);
-    /*
-
-    let sumap = dobles.reduce(function(valorAnterior, valorActual){
-      return valorAnterior + valorActual;
-    });
-    console.log("sumai", sumap);
-    
-    let sumai = impares.reduce(function(valorAnterior, valorActual){
-      return valorAnterior + valorActual;
-    });
-    console.log("sumap", sumai);
-    
-    let resultado = (sumap + sumai) % 10 === 0
-      return resultado;   */  
-  }
-  
-    
-
-    
-  
-
-  
-
+    let suma =  digitos.reduce((acum, valor) => acum + valor, 0);
+    let resultados = suma % 10 === 0;
+       return result,
+       console.log("resultados", resultados);   
+  },
+   
 };
 
 export default validator;
