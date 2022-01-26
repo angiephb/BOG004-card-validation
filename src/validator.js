@@ -42,9 +42,9 @@ en las pocisiones pares*/
     let digitos = dobles.concat(impares);   
     console.log("digitos", digitos);
 
-    let suma =  digitos.reduce((acum, valor) => acum + valor, 0);
+    let suma =  digitos.reduce((acc, valor) => acc + valor, 0);
     let resultados = suma % 10 === 0;
-       return result,
+       return resultados,
        console.log("resultados", resultados);   
   },
    
