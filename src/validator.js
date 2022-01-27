@@ -45,16 +45,20 @@ en las pocisiones pares*/
 
     let suma =  digitos.reduce((acc, valor) => acc + valor, 0);
     let resultados = suma % 10 === 0;
-       return resultados  
+       return resultados;  
   },
-  
+  maskify: (creditCardNumber) =>{
+    return creditCardNumber.map(num,position) => {
+      return (position< creditCardNumber.length - 4 ) ?"#":num;
+    
+   }
   }
     
-  }
+  
 
  
 
-};
+
 
 export default validator;
  

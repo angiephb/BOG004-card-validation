@@ -18,8 +18,8 @@ enviar.addEventListener("click", function(){
 
 /* Aquí llamamos la variable y el metodo para que ejecutara las funciones de "validator.js"
 y guardara los datos en nuestro array "arrayNumbers" */ 
-let enmascarado = validator.maskify(arrayNumbers);
-document.getElementById("numero").value=enmascarado
+  let enmascarado = validator.maskify(arrayNumbers);
+
 
 let validacion = validator.isValid(arrayNumbers);
 if (validacion === true){
