@@ -47,6 +47,8 @@ en las pocisiones pares*/
     let resultados = suma % 10 === 0;
        return resultados;
   },
+
+  /* aqui esta maskify*/
   maskify: (creditCardNumber) => {
     return creditCardNumber.map( (num, position) => {
       return (position < creditCardNumber.length - 4 ) ? '#': num;
