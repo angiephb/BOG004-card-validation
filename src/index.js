@@ -16,10 +16,10 @@ enviar.addEventListener("click", function(){
 /*Aqui guardamos el valor del INPUT, lo separamos por "," paraque quedara un array con varios elementos */ 
     arrayNumbers = (inputNumero.value.split(''));  
 
-/* Aquí llamamos la variable y el metodo para que ejecutara las funciones de "validator.js"
+/* Aquí llamamos las variables y el metodo para que ejecutara las funciones de "validator.js"
 y guardara los datos en nuestro array "arrayNumbers" */ 
-  let enmascarado = validator.maskify(arrayNumbers);
 
+let enmascarado = validator.maskify(arrayNumbers);  
 
 let validacion = validator.isValid(arrayNumbers);
 if (validacion === true){
