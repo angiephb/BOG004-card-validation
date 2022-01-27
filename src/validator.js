@@ -21,6 +21,7 @@ para obtener los numeros pares e impares y guardarlos en un array diferente*/
       return (num,position % 2 != 1);   
     })
     console.log("impares", impares);
+  
 
     let pares = Enteros.filter (function (num,position){
     return (num,position % 2 == 1);             
