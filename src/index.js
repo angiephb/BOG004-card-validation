@@ -18,16 +18,24 @@ enviar.addEventListener("click", function(){
 
 /* Aquí llamamos la variable y el metodo para que ejecutara las funciones de "validator.js"
 y guardara los datos en nuestro array "arrayNumbers" */ 
-    validator.isValid(arrayNumbers)  
+let enmascarado = validator.maskify(arrayNumbers);
+document.getElementById("numero").value=enmascarado
+
+let validacion = validator.isValid(arrayNumbers);
+if (validacion === true){
+     alert ("El número " + enmascarado + " es valido, Tu pago ha sido exitoso")
+}else {alert ("El número " +  enmascarado + " es Invalido, Por favor ingresa un nuevo número");
+}
    
 });
+
 
 /* Aqui le dimos un evento de escucha:KEYUP al input del numero de la tarjeta
 para que evitara algunos caractes*/
 
 formulario.numero.addEventListener("keyup", (e) => {
     let valorNumero = e.target.value;
-
+    
     formulario.numero.value = valorNumero
      //quitar espacios
     .replace(/\s/g, "")
@@ -37,7 +45,7 @@ formulario.numero.addEventListener("keyup", (e) => {
 
     //ultimo espacio
     .trim();
-
+    
 });
 
 /* Aquí modificamos las opciones de seleccion en meses y las personalizamos con un ciclo FOR */
@@ -58,4 +66,6 @@ for (let i = yearActual; i <= yearActual + 10; i++) {
     opcion.value = i;
     opcion.innerText = i;
     formulario.Year.appendChild(opcion);
+    
 }
+
