@@ -18,8 +18,16 @@ enviar.addEventListener("click", function(){
 
 /* Aquí llamamos la variable y el metodo para que ejecutara las funciones de "validator.js"
 y guardara los datos en nuestro array "arrayNumbers" */ 
-    validator.isValid(arrayNumbers)  
-   
+let enmascarado = validator.maskify(arrayNumbers);
+
+    let validacion = validator.isValid(arrayNumbers);
+         if (validacion === true){
+              alert ("Tu Numero de tarjeta es valido, Tu pago ha sido exitoso")
+         }else {alert ("El Numero" + enmascarado + "es Invalido, " + "Por favor ingresa un nuevo número");}  
+    
+    
+
+   location.reload();
 });
 
 /* Aqui le dimos un evento de escucha:KEYUP al input del numero de la tarjeta

@@ -45,10 +45,16 @@ en las pocisiones pares*/
 
     let suma =  digitos.reduce((acc, valor) => acc + valor, 0);
     let resultados = suma % 10 === 0;
-       return resultados,
-       console.log("resultados", resultados);   
+       return resultados  
   },
-   
+  
+  }
+    
+  }
+
+ 
+
 };
 
 export default validator;
+ 
