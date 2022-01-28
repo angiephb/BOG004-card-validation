@@ -1,6 +1,6 @@
 import validator from './validator.js';
 
-console.log(validator);
+/*console.log(validator);*/
 
 const formulario = document.querySelector ("#formulario-tarjeta");
 const inputNumero = document.querySelector ("#numero");
@@ -13,7 +13,7 @@ enviar.addEventListener("click", function(){
     /*console.log("antes",arrayNumbers);
     console.log("valor",inputNumero.value);*/
 
-/*Aqui guardamos el valor del INPUT, lo separamos por "," paraque quedara un array con varios elementos */ 
+/*Aqui guardamos el valor del INPUT, lo separamos por "," para que quedara un array con varios elementos */ 
     arrayNumbers = (inputNumero.value.split(''));  
 
 /* Aquí llamamos las variables y el metodo para que ejecutara las funciones de "validator.js"
@@ -24,8 +24,8 @@ let enmascarado = validator.maskify(arrayNumbers);
 let validacion = validator.isValid(arrayNumbers);
 if (validacion === true){
      alert ("El número " + enmascarado + " es valido, Tu pago ha sido exitoso")
-}else {alert ("El número " +  enmascarado + " es Invalido, Por favor ingresa un nuevo número");
-}
+  }else {alert ("El número " +  enmascarado + " es Invalido, Por favor ingresa un nuevo número");
+  }
    
 });
 
