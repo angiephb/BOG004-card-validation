@@ -3,7 +3,7 @@ const validator = {
 /* Aquí tomamos el metodo "isValid" para ejecutar dentro cada funcion del algoritmo de luhn */
 
   isValid:function(creditCardNumber){
-  creditCardNumber.reverse();
+    creditCardNumber.reverse(); 
 
     /*console.log("valortarjeta", creditCardNumber);*/
 

@@ -3,11 +3,11 @@
     padding: 0px;
     box-sizing: border-box;
 } 
-body{
-    background-image: url('src\image\pattern.jpg');
-    width: 100%;
-    
+body {
+    background-image: url(./image/pattern.jpg); 
+    background-size: cover;  
 }
+
 @font-face {
     font-family:nice;
     src: url(NiceDream.otf);

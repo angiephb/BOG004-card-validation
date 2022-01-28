@@ -14,7 +14,7 @@ enviar.addEventListener("click", function(){
     console.log("valor",inputNumero.value);*/
 
 /*Aqui guardamos el valor del INPUT, lo separamos por "," para que quedara un array con varios elementos */ 
-    arrayNumbers = (inputNumero.value.split(''));  
+    arrayNumbers = (inputNumero.value.split('')); 
 
 /* Aquí llamamos las variables y el metodo para que ejecutara las funciones de "validator.js"
 y guardara los datos en nuestro array "arrayNumbers" */ 
@@ -39,9 +39,6 @@ formulario.numero.addEventListener("keyup", (e) => {
     formulario.numero.value = valorNumero
      //quitar espacios
     .replace(/\s/g, "")
-
-    //elimina letras
-    .replace(/\D/g, "")    
 
     //ultimo espacio
     .trim();
