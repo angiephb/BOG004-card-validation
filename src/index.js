@@ -1,6 +1,6 @@
 import validator from './validator.js';
 
-console.log(validator);
+/*console.log(validator);*/
 
 const formulario = document.querySelector ("#formulario-tarjeta");
 const inputNumero = document.querySelector ("#numero");
