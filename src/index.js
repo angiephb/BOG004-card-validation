@@ -13,8 +13,8 @@ enviar.addEventListener("click", function(){
     /*console.log("antes",arrayNumbers);
     console.log("valor",inputNumero.value);*/
 
-/*Aqui guardamos el valor del INPUT, lo separamos por "," paraque quedara un array con varios elementos */ 
-    arrayNumbers = (inputNumero.value.split(''));  
+/*Aqui guardamos el valor del INPUT, lo separamos por "," para que quedara un array con varios elementos */ 
+    arrayNumbers = (inputNumero.value.split('')); 
 
 /* Aquí llamamos las variables y el metodo para que ejecutara las funciones de "validator.js"
 y guardara los datos en nuestro array "arrayNumbers" */ 
@@ -24,8 +24,8 @@ let enmascarado = validator.maskify(arrayNumbers);
 let validacion = validator.isValid(arrayNumbers);
 if (validacion === true){
      alert ("El número " + enmascarado + " es valido, Tu pago ha sido exitoso")
-}else {alert ("El número " +  enmascarado + " es Invalido, Por favor ingresa un nuevo número");
-}
+  }else {alert ("El número " +  enmascarado + " es Invalido, Por favor ingresa un nuevo número");
+  }
    
 });
 
@@ -39,9 +39,6 @@ formulario.numero.addEventListener("keyup", (e) => {
     formulario.numero.value = valorNumero
      //quitar espacios
     .replace(/\s/g, "")
-
-    //elimina letras
-    .replace(/\D/g, "")    
 
     //ultimo espacio
     .trim();
