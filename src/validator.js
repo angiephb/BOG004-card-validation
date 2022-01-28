@@ -3,13 +3,14 @@ const validator = {
 /* Aquí tomamos el metodo "isValid" para ejecutar dentro cada funcion del algoritmo de luhn */
 
   isValid:function(creditCardNumber){
-    creditCardNumber.reverse(); 
+    creditCardNumber = creditCardNumber.split('').reverse();
+
 
     /*console.log("valortarjeta", creditCardNumber);*/
 
 /*Utilizamos el metodo .map para recorrer el array y nos devolviera cada elemento convertido en un entero*/
 
-  let Enteros = creditCardNumber.map(function (num){
+  let Enteros = creditCardNumber.map (function (num){
     return  parseInt(num, 10);    
   })
   /*console.log("enteros", Enteros);*/
@@ -55,6 +56,7 @@ y nos diera un numero de 2 cifras */
 y lo trajera enmascarando las primeras 12 cifras*/
 
   maskify: (creditCardNumber) => {
+    creditCardNumber = creditCardNumber.split('');
     return creditCardNumber.map( (num, position) => {
       return (position < creditCardNumber.length - 4 ) ? '#': num;
     }).join('');

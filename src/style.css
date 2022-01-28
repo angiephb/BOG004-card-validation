@@ -3,15 +3,22 @@
     padding: 0px;
     box-sizing: border-box;
 } 
-body {
-    background-image: url(./image/pattern.jpg); 
-    background-size: cover;  
-}
 
 @font-face {
-    font-family:nice;
-    src: url(NiceDream.otf);
+    font-family: NiceDream;
+    src: url(./NiceDream.ttf);
 }
+
+body {
+    background-image: url(./image/pattern.jpg); 
+    background-size: cover; 
+    font-family: NiceDream;
+}
+
+h1 {
+    font-size: 100px;
+}
+
 
 /* formulario */
 
