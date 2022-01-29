@@ -1,4 +1,9 @@
-import validator from './validator.js';
+// intento de traer el formulario tarjeta al dar click en el boton enviar del primer formulario cliente 
+// function mostrarformtarjeta(){
+    // document.getElementsById("formulario-tarjeta").style.display ="block"};
+
+
+ import validator from './validator.js';
 
 /*console.log(validator);*/
 
@@ -10,14 +15,8 @@ const enviar = document.getElementById ("btnEnviar");
 /* Aqui le dimos una funcion al boton para que nos trajera la información del INPUT */
 
 enviar.addEventListener("click", function(){
-    /*console.log("antes",arrayNumbers);
-    console.log("valor",inputNumero.value);*/
 
-/*Aqui guardamos el valor del INPUT, lo separamos por "," para que quedara un array con varios elementos */ 
-    
-
-/* Aquí llamamos las variables y el metodo para que ejecutara las funciones de "validator.js"
-y guardara los datos en nuestro array "arrayNumbers" */ 
+/* Aquí llamamos las variables y el metodo para que ejecutara las funciones de "validator.js" */ 
 
 let enmascarado = validator.maskify(inputNumero.value);  
 
@@ -28,7 +27,6 @@ if (validacion === true){
   }
    
 });
-
 
 /* Aqui le dimos un evento de escucha:KEYUP al input del numero de la tarjeta
 para que evitara algunos caractes*/

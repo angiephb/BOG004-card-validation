@@ -1,5 +1,7 @@
 # VALIDACION DE TARJETA DE CREDITO
 
+## ¿EN QUE CONSITE EL PROYECTO?
+
 este proyecto consistió en desarrollar un aplicativo  web que  nos permitiera validar un número de tarjeta según el algoritmo luhn.
 
 ## Así quedo nuestro proyecto
@@ -7,9 +9,24 @@ este proyecto consistió en desarrollar un aplicativo  web que  nos permitiera v
 
 ## Diseño UX
 
-Nuestro usuario objetivo es una persona que realiza transacciones comerciales con tarjetas crédito en línea; La necesidad que se cubre con este aplicativo, es la de realizar un ingreso de información y validación de tarjetas de credito exitoso, guiando al usuario  durante el proceso de ingreso de información.
+### Usuario Objetivo
 
-## Nuestros prototipos en papel
+Nuestro usuario objetivo es cualquier persona que realice transacciones comerciales online con tarjeta crédito.
+
+### ¿Qué necesidad o problema resuelve nuestro aplicativo?
+
+La necesidad que se cubre con este aplicativo, es la de realizar un ingreso de información y validación de tarjetas de credito exitoso, guiando al usuario  durante el proceso de ingreso de información.
+
+## Nuestro prototipo en papel
+
+*[Prototipo de papel](./image/Prototipopapel.jpeg)*
+
+## Nuestro prototipo digital
+
+*[Ventana 1](./image/pdigital1.png)*
+*[Ventana 2](./image/pdigital2.png)*
+*[Ventana 3](./image/pdigital3.png)*
+*[Ventana 4](./image/pdigital4.png)*
 
 ## Feedback durante el proyecto
 
@@ -19,5 +36,4 @@ Nuestro usuario objetivo es una persona que realiza transacciones comerciales co
  
  3--Comprender la utilidad de comentar el  código  para facilitar su comprensión a cualquiera que lo lea.
 
-## Nuestro prototipo final
-
+## Proyecto Final
