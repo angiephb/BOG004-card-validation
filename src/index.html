@@ -18,16 +18,43 @@
     </header>
     <main>
 
-      <figure>
-        <img  id= "photo1" src="#" alt="Postre">
-        <img  id= "photo2" src="#" alt="Galleta">
-        <img  id= "photo3" src="#" alt="Pastel">
-      </figure> 
+      <!-- formulario cliente se hizo un div cliente para poder separar los formularios y
+        poder ocultarlos y mostrarlos por separado-->
+        
+        <div class= "cliente">
+          
+
+          <form action="" class="formulario-cliente" id="formulario-cliente">
+            <h2>Detalles de facturación</h2>
+
+            <div class="gcliente">
+              <label for="cliente">Cliente</label>
+              <input type="text" id="cliente" maxlength="16">
+            </div>
+
+            <div class="gcliente">
+              <label for="direccion">Dirección de  entrega</label>
+              <input type="text" id="direccion" maxlength="30" >
+            </div>
+           
+            <div class="gcliente">
+              <label for="teléfono">telefóno</label>
+              <input type="text" id="telefóno" maxlength="10">
+            </div>
+            
+          <button type="button" class="btnEnviar2" id="btnEnviar2" >Enviar</button>       
+
+          </form>            
+         
+        </div>
       
       <div class="contenido">
-        <!-- formulario de tarjeta se creo un div A para separar los formularios en div aparte ypoder usarlos independientes-->
-           <div class= "A"> 
+        <h3>Información de Tú tarjeta</h3>
+      <div class="btn-cerrar">x</div>
+      
+        
         <form action="" class="formulario-tarjeta" id="formulario-tarjeta">
+          
           <div class="gtarjeta">
             <label for="numero">Número de Tarjeta</label>
             <input type="text" id="numero" maxlength="16" autocomplete="off">
@@ -71,29 +98,7 @@
           </div>
        </div>
     
-       <!-- formulario cliente se hizo un div B para poder separar los formularios y
-        poder ocultarlos y mostrarlos por separado-->
-        
-      <div class= "B"> 
-        <form action="" class="formulario-cliente" id="formulario-cliente">
-          <div class="gcliente">
-            <label for="cliente">Cliente</label>
-            <input type="text" id="cliente" maxlength="16">
-          </div>
-          <div class="gcliente">
-            <label for="direccion">Dirección de  entrega</label>
-            <input type="text" id="direccion" maxlength="30" >
-          </div>
-               <div class="gcliente">
-                <label for="teléfono">telefóno</label>
-                <input type="text" id="telefóno" maxlength="10">
-               </div>
-                <!-- intento de enlazar el boton enviar del formulario cliente para que traiga el formulario tarjeta que esta oculto -->
-               <button type="button" onclick="mostrarformtarjeta();" class="btnEnviar2" id="btnEnviar2" >Enviar</button>       
-        </form> 
-           
        
-      </div>
         
     
     </main>

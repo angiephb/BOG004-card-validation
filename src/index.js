@@ -10,6 +10,18 @@
 const formulario = document.querySelector ("#formulario-tarjeta");
 const inputNumero = document.querySelector ("#numero");
 const enviar = document.getElementById ("btnEnviar");
+const enviar2 = document.querySelector("#btnEnviar2");
+const cerrar = document.querySelector(".contenido .btn-cerrar");
+
+/*funcionalidad del boton formulario cliente para que traiga el formulario de la tarjeta */
+
+enviar2.addEventListener("click", function (){
+    document.querySelector(".contenido").classList.add("active");
+});
+
+cerrar.addEventListener("click", function (){
+   document.querySelector(".contenido").classList.remove("active");
+});
 
 
 /* Aqui le dimos una funcion al boton para que nos trajera la información del INPUT */
@@ -63,4 +75,6 @@ for (let i = yearActual; i <= yearActual + 10; i++) {
     formulario.Year.appendChild(opcion);
     
 }
+
+
 

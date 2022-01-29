@@ -12,7 +12,7 @@
 body {
     background-image: url(./image/pattern.jpg); 
     background-size: cover; 
-    font-family: NiceDream;
+    
 }
 
 h1 {
@@ -24,24 +24,38 @@ h1 {
     display:flex;
     justify-content: center;
     align-items: center;
+    font-family: NiceDream;
    
-}#menu {
-    margin: 30px auto;
 }
+
+/* menu */
+#menu {
+    margin: auto;    
+    text-align: center;
+}
+
 .menu ul{
     list-style: none;
 }
+
 .menu > li{    
+    display: inline-block;    
     padding: 10px;
-    display: inline-block;
+    width: 400px;
+    height: 100px;
+    margin: 20px;
 }
 
 .menu >li>a{
     display: block;
-    color:rgb(2, 161, 100);
-    font-size: 100px;
-    padding: 15px;
+    color:rgb(255, 255, 255);
     text-decoration: none;
+    font-size: 70px;
+    font-family: NiceDream;
+    text-shadow:1px 1px 5px rgb(187, 2, 212),
+                1px 1px 10px rgb(187, 2, 212),
+                1px 1px 10px rgb(187, 2, 212); 
+
 }
 
 #reposteria{
@@ -62,30 +76,70 @@ h1 {
     border-radius: 10px;
 }
 
-/* formulario */
-.formulario-tarjeta{
-    display: none   
-}   /* aqui se oculta el formulario tarjeta */
+/* popup formulario tarjeta*/
 
-.formulario-tarjeta {
+.contenido{
+    position: absolute;
+    top: -180%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.25);
+    width: 500px;    
     background-color: rgb(148, 255, 214);
-    width: 100%;
-    max-width: 700px;
-    padding: 150px 30px 30px 30px;
+    padding: 30px 30px 30px 30px;
     border-radius: 15px;
-    position: absolute; left:900px ; 
-    justify-content: center;
     align-items: center;
-   
-
-    
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 20ms ease-in-out 0ms;
 }
+
+/* colocamos una clase active para darle una trancision y este oculto hasta que sea llamado por el boton */
+
+.contenido.active{
+    top: 80%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    transition: top 0ms ease-in-out 0ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 20ms ease-in-out 0ms;
+}
+
+/* cierra el formulario */
+
+.contenido .btn-cerrar{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    background: rgb(2, 161, 100);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: helvetica;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    line-height: 16px;
+    align-items: center;
+}
+
+.contenido h3{
+    text-align: center;
+    font-family: helvetica;
+    font-size: 26px;
+    margin:10px 0px 20px;
+    color:blueviolet;
+}
+
+/* formulario tarjeta*/
 
 .formulario-tarjeta label {
     display: block;
     color: blueviolet;
     margin-bottom: 5px;
-    font-size: 16px;
+    font-size: 20px;    
+    font-family: helvetica;
 }
 
 .formulario-tarjeta input,
@@ -93,7 +147,8 @@ h1 {
 .btnEnviar {
     border:2px solid rgb(85, 250, 187);
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 22px;
+    font-family: helvetica;
     padding: 5px 12px;
     width: 100%;
 }
@@ -116,8 +171,7 @@ h1 {
 
 .formulario-tarjeta .flexbox{
     display: flex;    
-    justify-content: space-between 
-    ;
+    justify-content: space-between;
 
 }
 
@@ -128,6 +182,7 @@ h1 {
 .formulario-tarjeta .cvv{
     min-width: 100px;
 }
+
 .formulario-tarjeta .seleccion{
     width: 100%;
     margin-right: 15px;
@@ -136,7 +191,6 @@ h1 {
 
 .formulario-tarjeta select{
     -webkit-appearance: none;
-
 }
 
 .formulario-tarjeta .seleccion i{
@@ -166,29 +220,55 @@ h1 {
 
 }
 
+/* formulario cliente*/
+
 .formulario-cliente {
     background-color: rgb(213, 101, 223);
-    width: 100%;
-    max-width: 700px;
-    padding: 150px 30px 30px 30px;
+    width: 400px;
+    padding: 30px 30px 30px 30px;
     border-radius: 15px;
+    margin: 30px;
 }
+
+.cliente h2{
+    text-align: center;
+    font-family: helvetica;
+    font-size: 26px;
+    margin:10px 0px 20px;
+    color:rgb(255, 255, 255);
+}
+
 
 .formulario-cliente label {
     display: block;
-    color: rgb(10, 78, 141);
+    color: rgb(255, 255, 255);
     margin-bottom: 5px;
-    font-size: 16px;
+    font-size: 20px;
+    font-family: helvetica;
+    padding-top: 10px;
 }
 
+.formulario-cliente input,
 .formulario-cliente input,
 .btnEnviar2 {
     border:2px solid rgb(85, 250, 187);
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 22px;
+    font-family: helvetica;
     padding: 5px 12px;
     width: 100%;
 }  
+
+.formulario-cliente input:hover,
+.formulario-cliente select:hover {
+    border:2px solid rgb(2, 212, 132);
+}
+
+.formulario-cliente input:focus,
+.formulario-cliente select:focus {
+    outline: rgb(148, 255, 214);
+    box-shadow: 1px 7px 10px -5px rgb(187, 2, 212);
+}
  
 .formulario-cliente .btnEnviar2{
         border:none;
@@ -198,4 +278,10 @@ h1 {
         background-color: rgb(2, 161, 100);
         box-shadow: 2px 2px 10px 0px rgb(15, 34, 119);
         cursor: pointer;
+        margin-top: 15px;
+}
+
+.formulario-cliente .btnEnviar2:hover{
+    background: rgb(85, 250, 187);
+    color:rgb(2, 161, 100);
 }
