@@ -1,4 +1,9 @@
-import validator from './validator.js';
+// intento de traer el formulario tarjeta al dar click en el boton enviar del primer formulario cliente 
+// function mostrarformtarjeta(){
+    // document.getElementsById("formulario-tarjeta").style.display ="block";
+}
+
+ import validator from './validator.js';
 
 /*console.log(validator);*/
 

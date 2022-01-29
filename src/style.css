@@ -63,14 +63,16 @@ h1 {
 }
 
 /* formulario */
-.formulario-tarjeta {display: none;}
+.formulario-tarjeta{
+    display: none   
+}   /* aqui se oculta el formulario tarjeta */
 .formulario-tarjeta {
     background-color: rgb(148, 255, 214);
     width: 100%;
     max-width: 700px;
     padding: 150px 30px 30px 30px;
     border-radius: 15px;
-    position: absolute; left:500px ; 
+    position: absolute; left:900px ; 
     justify-content: center;
     align-items: center;
    
@@ -163,4 +165,35 @@ h1 {
 
 }
 
+.formulario-cliente {
+    background-color: rgb(213, 101, 223);
+    width: 100%;
+    max-width: 700px;
+    padding: 150px 30px 30px 30px;
+    border-radius: 15px;
+}
 
+.formulario-cliente label {
+    display: block;
+    color: rgb(10, 78, 141);
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.formulario-cliente input,
+.btnEnviar2 {
+    border:2px solid rgb(85, 250, 187);
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 5px 12px;
+    width: 100%;
+}  
+ 
+.formulario-cliente .btnEnviar2{
+        border:none;
+        padding: 10px;
+        font-size: 20px;
+        color:rgb(255, 255, 255);
+        background-color: rgb(2, 161, 100);
+        box-shadow: 2px 2px 10px 0px rgb(15, 34, 119);
+        cursor: pointer;
