@@ -19,7 +19,7 @@ La necesidad que se cubre con este aplicativo, es la de realizar un ingreso de i
 
 ## Nuestro prototipo en papel
 
-*[Prototipo de papel](https://github.com/angiephb/BOG004-card-validation/blob/main/src/image/Prototipopapel.jpeg)*
+*![Prototipo de papel](https://github.com/angiephb/BOG004-card-validation/blob/main/src/image/Prototipopapel.jpeg)*
 
 ## Nuestro prototipo digital
 
