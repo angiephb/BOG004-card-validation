@@ -16,19 +16,66 @@ body {
 }
 
 h1 {
-    font-size: 100px;
+    
+    background:rgb(252, 204, 204, .8);
+    color:rgb(181, 0, 253);
+    font-size: 150px;    
+    margin-top:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   
+}#menu {
+    margin: 30px auto;
+}
+.menu ul{
+    list-style: none;
+}
+.menu > li{    
+    padding: 10px;
+    display: inline-block;
 }
 
+.menu >li>a{
+    display: block;
+    color:rgb(2, 161, 100);
+    font-size: 100px;
+    padding: 15px;
+    text-decoration: none;
+}
+
+#reposteria{
+    background-image: url(./image/reposteria.jpg);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+#panaderia{
+    background-image: url(./image/panaderia.jpg);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+#pasteleria{
+    background-image: url(./image/pasteleria.jpg);
+    background-size: cover;
+    border-radius: 10px;
+}
 
 /* formulario */
-
+.formulario-tarjeta {display: none;}
 .formulario-tarjeta {
     background-color: rgb(148, 255, 214);
     width: 100%;
     max-width: 700px;
     padding: 150px 30px 30px 30px;
     border-radius: 15px;
-    position:relative;
+    position: absolute; left:500px ; 
+    justify-content: center;
+    align-items: center;
+   
+
+    
 }
 
 .formulario-tarjeta label {
@@ -66,7 +113,9 @@ h1 {
 
 .formulario-tarjeta .flexbox{
     display: flex;    
-    justify-content: space-between;
+    justify-content: space-between 
+    ;
+
 }
 
 .formulario-tarjeta .fecha{
