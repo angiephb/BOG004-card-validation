@@ -23,10 +23,10 @@ La necesidad que se cubre con este aplicativo, es la de realizar un ingreso de i
 
 ## Nuestro prototipo digital
 
-*[Ventana 1](./image/pdigital1.png)*
-*[Ventana 2](./image/pdigital2.png)*
-*[Ventana 3](./image/pdigital3.png)*
-*[Ventana 4](./image/pdigital4.png)*
+*![Ventana 1](./image/pdigital1.png)*
+*![Ventana 2](./image/pdigital2.png)*
+*![Ventana 3](./image/pdigital3.png)*
+*![Ventana 4](./image/pdigital4.png)*
 
 ## Feedback durante el proyecto
 
