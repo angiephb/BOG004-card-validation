@@ -19,14 +19,14 @@ La necesidad que se cubre con este aplicativo, es la de realizar un ingreso de i
 
 ## Nuestro prototipo en papel
 
-*[Prototipo de papel](./image/Prototipopapel.jpeg)*
+*[Prototipo de papel](https://github.com/angiephb/BOG004-card-validation/blob/main/src/image/Prototipopapel.jpeg)*
 
 ## Nuestro prototipo digital
 
-![screenshot](./image/pdigital1.png)
-*![Ventana 2](./image/pdigital2.png)*
-*![Ventana 3](./image/pdigital3.png)*
-*![Ventana 4](./image/pdigital4.png)*
+*![Ventana 1](https://github.com/angiephb/BOG004-card-validation/blob/main/src/image/pdigital1.png)*
+*![Ventana 2](https://github.com/angiephb/BOG004-card-validation/blob/main/src/image/pdigital2.png)*
+*![Ventana 3](https://github.com/angiephb/BOG004-card-validation/blob/main/src/image/pdigital3.png)*
+*![Ventana 4](https://github.com/angiephb/BOG004-card-validation/blob/main/src/image/pdigital4.png)*
 
 ## Feedback durante el proyecto
 
